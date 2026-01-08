@@ -11,3 +11,4 @@ import "./styles/sections/schedule-period.css"
 
 // jS
 import "./modules/modal/open-modal.js"
+import "./modules/form/submit.js"
