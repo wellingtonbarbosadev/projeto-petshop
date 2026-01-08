@@ -81,6 +81,15 @@
       color: var(--content-secondary);
     }
 
+    .remove-schedule {
+      transition: all .5s;
+      &:hover {
+        color: var(--content-primary);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
     & + & {
       padding-top: 12px;
       border-top: 1px solid var(--border-divisor);
