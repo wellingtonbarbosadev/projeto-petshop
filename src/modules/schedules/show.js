@@ -42,6 +42,7 @@ export function schedulesShow({ dailySchedules }) {
 
 
     const item = document.createElement("li")
+    item.setAttribute("data-id", schedule.id)
     item.append(div, serviceDescription, removeSchedule)
 
     const hour = dayjs(schedule.when).hour()
