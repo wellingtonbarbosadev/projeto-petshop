@@ -16,6 +16,10 @@
       display: flex;
       gap: 12px;
     }
+
+    & span {
+      color: var(--content-secondary);
+    }
   }
 
   & + & {
