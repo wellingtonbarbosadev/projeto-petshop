@@ -4,22 +4,24 @@ const CopyWebpackPlugin = require("copy-webpack-plugin")
 const { use } = require("react")
 
 module.exports = {
-  entry: path(__dirname, "src", "main.js"),
+  entry: path.resolve(__dirname, "src", "main.js"),
   output: {
-    path: path(__dirname, "dist"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src", "index.html"),
-      favicon: path.resolve(__dirname, "src", "assets", "logo.svg")
+      favicon: path.resolve(__dirname, "src", "assets", "icons", "logo.svg")
     }),
 
     new CopyWebpackPlugin({
-      patterns: {
-        from: path.resolve(__dirname, "src", "assets"),
-        to: path.resolve(__dirname, "dist" ,"src", "assets")
-      },
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src", "assets"),
+          to: path.resolve(__dirname, "dist" ,"src", "assets")
+        },
+      ],
     }),
   ],
 
@@ -38,7 +40,7 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
-        exclude: "./node_modules"
+        exclude: "/node_modules"
       }
     ]
   }
