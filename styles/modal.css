@@ -1,0 +1,99 @@
+dialog {
+  max-width: 477px;
+  border-radius: 12px;
+  border: unset;
+  background-color: var(--background-tertiary);
+  color: var(--content-primary);
+  padding-inline: 40px;
+
+  header {
+    margin-bottom: 28px;
+    p {
+      color: var(--content-secondary);
+    }
+  }
+
+  form {
+    fieldset {
+      border: unset;
+      margin-bottom: 16px;
+
+      legend {
+        font-size: var(--font-size-label-medium);
+        line-height: var(--line-height-label-medium);
+        font-weight: var(--font-weight-bold);
+      }
+
+      input, 
+      textarea {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid var(--border-primary);
+        border-radius: 8px;
+        padding: 12px;
+        color: var(--content-secondary);
+
+        &::placeholder {
+          color: var(--content-secondary);
+        }
+      }
+
+      input {
+        height: 48px;
+      }
+
+      textarea {
+        resize: none;
+        height: 80px;
+      }
+    }
+    div {
+      display: flex;
+      gap: 1rem;
+
+      label {
+        flex: 1;
+      }
+
+      input {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::-webkit-calendar-picker-indicator {
+          all: unset;
+          position: absolute;
+          right: 0;
+          transform: translateX(-12px);
+          display: inline-block;
+          mask: url("../../assets/icons/icon.svg");
+          background-color: var(--content-primary);
+          width: 20px;
+          height: 20px;
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          background: url("../../assets/icons/calendar.svg") no-repeat;
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
+
+        &[type="time"]::before {
+          background: url("../../assets/icons/clock.svg") no-repeat;
+        }
+      }
+     }
+     button[type="submit"] {
+      background-color: var(--brand-primary);
+     }
+  }
+
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.313);
+    backdrop-filter: blur(5px);
+  }
+}

@@ -3,7 +3,7 @@ footer {
   bottom: 40px;
   right: 40px;
 
-  button {
+  button:not(button[type="submit"]) {
     background-color: var(--content-brand);
     color: #050505;
     height: 48px;
