@@ -68,12 +68,17 @@
       gap: 4px;
 
       .pet-owner {
-        color: var(--content-secondary);
 
         &::before {
           content: "/ ";
         }
       }
+    }
+
+    .pet-owner,
+    .service-description,
+    .remove-schedule {
+      color: var(--content-secondary);
     }
 
     & + & {
