@@ -1,0 +1,45 @@
+.schedule-period {
+
+  background-color: var(--background-tertiary);
+  border-radius: 10px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid var(--border-divisor);
+    padding-inline: 20px;
+    height: 48px;
+
+    & div:first-child {
+      display: flex;
+      gap: 12px;
+    }
+  }
+
+  & + & {
+    margin-top: 12px;
+  }
+  .sun-image,
+  .cloud-sun-image,
+  .moon-image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .sun-image {
+    mask: url("../../assets/icons/sun.svg");
+    background-color: var(--accent-blue);
+  }
+
+  .cloud-sun-image {
+    mask: url("../../assets/icons/cloud-sun.svg");
+    background-color: var(--accent-orange);
+  }
+
+  .moon-image {
+    mask: url("../../assets/icons/moon.svg");
+    background-color: var(--accent-yellow);
+  }
+}
