@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #14151D;
-}
-
 :root {
   /* Content */
   --content-primary: #FFFFFF;
@@ -65,7 +61,7 @@ body {
 
 body {
   font-family: var(--font-family-base);
-  background-color: var(--background-primary);
+  background-color: #14151D;
   color: var(--content-primary);
 }
 
