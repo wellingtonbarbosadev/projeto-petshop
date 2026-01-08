@@ -47,3 +47,39 @@
     background-color: var(--accent-yellow);
   }
 }
+
+.schedule-period ul {
+  list-style: none;
+  padding: 20px;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding-block: 16px;
+
+    div {
+      display: flex;
+      align-items: center;
+      strong {
+        margin-right: 12px;
+      }
+      gap: 4px;
+
+      .pet-owner {
+        color: var(--content-secondary);
+
+        &::before {
+          content: "/ ";
+        }
+      }
+    }
+
+    & + & {
+      padding-top: 12px;
+      border-top: 1px solid var(--border-divisor);
+    }
+
+  }
+}
