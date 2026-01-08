@@ -4,7 +4,7 @@ dialog {
   border: unset;
   background-color: var(--background-tertiary);
   color: var(--content-primary);
-  padding-inline: 40px;
+  padding: 40px;
 
   header {
     margin-bottom: 28px;
@@ -87,7 +87,13 @@ dialog {
       }
      }
      button[type="submit"] {
-      background-color: var(--brand-primary);
+      background-color: var(--content-brand);
+      border-radius: 8px;
+      text-transform: uppercase;
+      height: 48px;
+      width: 130px;
+      margin-left: auto;
+      margin-top: 12px;
      }
   }
 
