@@ -12,5 +12,6 @@ import "./styles/sections/schedule-period.css"
 // jS
 import "./modules/page-load.js"
 import "./modules/modal/open-modal.js"
+import "./modules/schedules/remove.js"
 import "./modules/form/submit.js"
 import "./modules/form/date-change.js"

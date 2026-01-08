@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import { scheduleNew } from "../../services/schedule-new.js";
+import { closeModal } from "../modal/open-modal.js";
 
 const form = document.querySelector("form");
 const name = document.querySelector("#tutor-name");
@@ -11,7 +12,7 @@ const timeElement = document.querySelector("#time");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const id = new Date().getTime()
+  const id = String(new Date().getTime())
   const tutorName = name.value.trim()
   const petName = pet.value.trim()
   const tutorNumber = number.value
@@ -30,4 +31,6 @@ form.addEventListener("submit", (event) => {
     descriptionService,
     when,
   });
+
+  closeModal()
 });
