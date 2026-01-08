@@ -1,0 +1,47 @@
+.agenda {
+  #header-agenda {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+
+    p {
+      color: var(--content-secondary);
+    }
+
+    div + div {
+      display: flex;
+      align-items: center;
+      input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        height: calc(100% - 12px);
+        width: max-content;
+        text-align: center;
+        padding-inline: 12px;
+        background-color: transparent;
+        color: var(--content-secondary);
+        border: 1px solid var(--border-primary);
+
+        &::-webkit-calendar-picker-indicator {
+          all: unset;
+          display: inline-block;
+          mask: url("../../assets/icons/icon.svg");
+          background-color: var(--content-primary);
+          width: 20px;
+          height: 20px;
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          background: url("../../assets/icons/calendar.svg") no-repeat;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
