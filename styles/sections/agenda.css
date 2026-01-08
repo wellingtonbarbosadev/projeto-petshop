@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     gap: 12px;
+    margin-bottom: 2rem;
 
     p {
       color: var(--content-secondary);
