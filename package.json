@@ -1,9 +1,18 @@
 {
+  "name": "petshop",
+  "description": "Aplicação Web para agendamento de serviços de petshop.",
+  "scripts": {
+    "dev": "webpack server",
+    "server": "json-server --watch --port=3333 server.json",
+    "build": "webpack"
+  },
+  
   "devDependencies": {
     "css-loader": "^7.1.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.104.1",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-server": "^0.1.2"
   },
   "dependencies": {
     "dayjs": "^1.11.19",
