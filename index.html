@@ -10,7 +10,130 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <header id="top">
+    <img src="assets/icons/logo.svg" alt="Logo do Pet Shop">
+    <h1>Mundo Pet</h1>
+  </header>
+
+  <main>
+    <section class="agenda">
+
+      <header>
+        <div>
+          <h2>Sua agenda</h2>
+          <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+        </div>
+        
+        <div>
+          <input type="date" name="date" id="date">
+        </div>
+      </header>
+
+      <section class="schedule-period">
+        <header>
+          <div>
+            <img src="assets/icons/sun.svg" alt="Manhã">
+            <strong>Manhã</strong>
+          </div>
+
+          <span>09h-12h</span>
+        </header>
+
+        <ul id="period-morning">
+          <li>
+            <div>
+              <strong>09:00</strong>
+              <span class="pet-name">Thor</span>
+              <span class="pet-owner">Fernanda Costa</span>
+            </div>
+
+            <p class="service-description">Vacinação</p>
+
+            <span class="remove-schedule">Remover agendamento</span>
+          </li>
+        </ul>
+      </section>
+
+       <section class="schedule-period">
+        <header>
+          <div>
+            <img src="assets/icons/cloud-sun.svg" alt="Tarde">
+            <strong>Tarde</strong>
+          </div>
+
+          <span>13h-18h</span>
+        </header>
+
+        <ul id="period-afternoon">
+          <li>
+            <div>
+              <strong>13:00</strong>
+              <span class="pet-name">Mel</span>
+              <span class="pet-owner">João Souza</span>
+            </div>
+
+            <p class="service-description">Corte de Unhas</p>
+
+            <span class="remove-schedule">Remover agendamento</span>
+          </li>
+
+          <li>
+            <div>
+              <strong>14:00</strong>
+              <span class="pet-name">Bella</span>
+              <span class="pet-owner">Pedro martins</span>
+            </div>
+
+            <p class="service-description">Aplicação de anti-pulgas</p>
+
+            <span class="remove-schedule">Remover agendamento</span>
+          </li>
+
+          <li>
+            <div>
+              <strong>15:00</strong>
+              <span class="pet-name">Simba</span>
+              <span class="pet-owner">Juliana Rocha</span>
+            </div>
+
+            <p class="service-description">Tosa Higiênica</p>
+
+            <span class="remove-schedule">Remover agendamento</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="schedule-period">
+        <header>
+          <div>
+            <img src="assets/icons/moon.svg" alt="Noite">
+            <strong>Manhã</strong>
+          </div>
+
+          <span>19h-21h</span>
+        </header>
+
+        <ul id="period-night">
+          <li>
+            <div>
+              <strong>20:00</strong>
+              <span class="pet-name">Max</span>
+              <span class="pet-owner">Camila Santos</span>
+            </div>
+
+            <p class="service-description">Limpeza de Dentes</p>
+
+            <span class="remove-schedule">Remover agendamento</span>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <footer>
+      <button type="button">
+        Novo Agendamento
+      </button>
+    </footer>
+  </main>
   <script src=""></script>
 </body>
 </html>

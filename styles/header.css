@@ -1,0 +1,26 @@
+body {
+  position: relative;
+}
+
+#top {
+  position: absolute;
+  background-color: #2E2C30;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: max-content;
+  padding: 12px 20px;
+  gap: 4px;
+  border-bottom-right-radius: 12px;
+
+  font-family: var(--font-family-title);
+  font-size: 10px;
+  line-height: 24px;
+  color: var(--content-brand);
+  text-transform: uppercase;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
