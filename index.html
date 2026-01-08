@@ -107,82 +107,93 @@
     </footer>
 
     <dialog id="modal-1">
-        <header>
-          <h3 class="title">Agende um atendimento</h3>
-          <p class="paragraph-medium">
-            Preencha os dados do cliente para realizar o agendamento:
-          </p>
-        </header>
+      <header>
+        <h3 class="title">Agende um atendimento</h3>
+        <p class="paragraph-medium">
+          Preencha os dados do cliente para realizar o agendamento:
+        </p>
+      </header>
 
-        <form action="POST">
+      <form action="POST">
+        <label>
+          <fieldset>
+            <legend>Nome do tutor</legend>
+            <input
+              type="text"
+              name="tutor-name"
+              id="tutor-name"
+              placeholder="Helena souza"
+              required
+            />
+          </fieldset>
+        </label>
+
+        <label>
+          <fieldset>
+            <legend>Nome do pet</legend>
+            <input
+              type="text"
+              name="pet-name"
+              id="pet-name"
+              placeholder="Cheddar"
+              required
+            />
+          </fieldset>
+        </label>
+
+        <label>
+          <fieldset>
+            <legend>Telefone</legend>
+            <input
+              type="tel"
+              name="tutor-number"
+              id="tutor-number"
+              placeholder="(00) 0 0000-0000"
+              required
+            />
+          </fieldset>
+        </label>
+
+        <label>
+          <fieldset>
+            <legend>Descrição do serviço</legend>
+            <textarea
+              name="description-service"
+              id="description-service"
+              placeholder="Banho e tosa"
+              required
+            ></textarea>
+          </fieldset>
+        </label>
+
+        <div>
           <label>
             <fieldset>
-              <legend>Nome do tutor</legend>
+              <legend>Data</legend>
+              <input type="date" name="date" id="date" required/>
+            </fieldset>
+          </label>
+
+          <label>
+            <fieldset>
+              <legend>Hora</legend>
               <input
-                type="text"
-                name="tutor-name"
-                id="tutor-name"
-                placeholder="Helena souza"
+                type="time"
+                name="time"
+                id="time"
+                step="3600"
+                pattern="^([01]\d|2[0-3]):00$"
+                required
               />
             </fieldset>
           </label>
+        </div>
 
-          <label>
-            <fieldset>
-              <legend>Nome do pet</legend>
-              <input
-                type="text"
-                name="pet-name"
-                id="pet-name"
-                placeholder="Cheddar"
-              />
-            </fieldset>
-          </label>
-
-          <label>
-            <fieldset>
-              <legend>Telefone</legend>
-              <input
-                type="tel"
-                name="tutor-number"
-                id="tutor-number"
-                placeholder="(00) 0 0000-0000"
-              />
-            </fieldset>
-          </label>
-
-          <label>
-            <fieldset>
-              <legend>Descrição do serviço</legend>
-              <textarea
-                name="description-service"
-                id="description-service"
-                placeholder="Banho e tosa"
-              ></textarea>
-            </fieldset>
-          </label>
-
-          <div>
-            <label>
-              <fieldset>
-                <legend>Data</legend>
-                <input type="date" name="date" id="date">
-              </fieldset>
-            </label>
-
-            <label>
-              <fieldset>
-                <legend>Hora</legend>
-                <input type="time" name="time" id="time">
-              </fieldset>
-            </label>
-          </div>
-
-          <div class="container-submit">
-            <button type="submit" class="label-large">Agendar</button>
-          </div>
-        </form>
-      </dialog>
+        <div class="container-submit">
+          <button type="submit" class="label-large">Agendar</button>
+        </div>
+      </form>
+    </dialog>
 
     <script src="scripts/scripts.js"></script>
   </body>

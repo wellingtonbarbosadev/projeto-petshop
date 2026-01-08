@@ -32,9 +32,19 @@ dialog {
         border-radius: 8px;
         padding: 12px;
         color: var(--content-secondary);
+        transition: all .5s;
+        outline: none;
 
         &::placeholder {
           color: var(--content-secondary);
+        }
+
+        &:hover {
+          border: 1px solid var(--border-secondary);
+        }
+
+        &:focus {
+          border: 1px solid var(--border-brand);
         }
       }
 
@@ -94,6 +104,12 @@ dialog {
       width: 130px;
       margin-left: auto;
       margin-top: 12px;
+      transition: all .5s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--background-highlights);
+      }
      }
   }
 
@@ -103,3 +119,4 @@ dialog {
     backdrop-filter: blur(5px);
   }
 }
+
