@@ -1,9 +1,13 @@
-const openModal = document.querySelector(".open-modal")
-const modal = document.querySelector("#modal-1")
+"use strict";
 
-openModal.addEventListener("click", ((e) => {
-  const modalId = openModal.getAttribute("data-modal")
-  const modal = document.getElementById(modalId)
+// CSS
+import "./styles/global.css"
+import "./styles/footer.css"
+import "./styles/header.css"
+import "./styles/modal.css"
+import "./styles/utility.css"
+import "./styles/sections/agenda.css"
+import "./styles/sections/schedule-period.css"
 
-  modal.showModal()
-}))
+// jS
+import "./modules/modal/open-modal.js"

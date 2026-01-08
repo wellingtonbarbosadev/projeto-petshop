@@ -76,7 +76,7 @@ dialog {
           right: 0;
           transform: translateX(-12px);
           display: inline-block;
-          mask: url("../../assets/icons/icon.svg");
+          mask: url("../../src/assets/icons/icon.svg");
           background-color: var(--content-primary);
           width: 20px;
           height: 20px;
@@ -85,14 +85,14 @@ dialog {
         &::before {
           content: "";
           display: inline-block;
-          background: url("../../assets/icons/calendar.svg") no-repeat;
+          background: url("../../src/assets/icons/calendar.svg") no-repeat;
           width: 20px;
           height: 20px;
           margin-right: 8px;
         }
 
         &[type="time"]::before {
-          background: url("../../assets/icons/clock.svg") no-repeat;
+          background: url("../../src/assets/icons/clock.svg") no-repeat;
         }
       }
      }
