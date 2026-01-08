@@ -120,3 +120,12 @@ dialog {
   }
 }
 
+@media (max-width: 600px) {
+  dialog {
+    margin-inline: 20px;
+
+    form div {
+      flex-direction: column;
+    }
+  }
+}

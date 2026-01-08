@@ -55,9 +55,12 @@
   li {
     display: flex;
     justify-content: space-between;
+    
     align-items: center;
     height: 48px;
     padding-block: 16px;
+
+    
 
     div {
       display: flex;
@@ -95,5 +98,14 @@
       border-top: 1px solid var(--border-divisor);
     }
 
+    @media (max-width: 600px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      .remove-schedule {
+        align-self: flex-end;
+      }
+    }
   }
 }
