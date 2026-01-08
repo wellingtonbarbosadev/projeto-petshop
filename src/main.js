@@ -10,5 +10,6 @@ import "./styles/sections/agenda.css"
 import "./styles/sections/schedule-period.css"
 
 // jS
+import "./modules/page-load.js"
 import "./modules/modal/open-modal.js"
 import "./modules/form/submit.js"
