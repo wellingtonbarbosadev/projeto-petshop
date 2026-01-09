@@ -1,7 +1,7 @@
 import { scheduleRemove } from "../../services/schedule-remove.js"
-const list = document.querySelector("ul")
+const agenda = document.querySelector(".agenda")
 
-list.addEventListener("click", (item) => {
+agenda.addEventListener("click", (item) => {
   if (item.target.classList.contains("remove-schedule")) {
     item = item.target.closest("li")
     const scheduleId = item.getAttribute("data-id")
