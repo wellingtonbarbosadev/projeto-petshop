@@ -33,4 +33,5 @@ form.addEventListener("submit", (event) => {
   });
 
   closeModal()
+  form.reset()
 });

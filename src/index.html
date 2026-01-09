@@ -44,7 +44,7 @@
           </header>
 
           <ul id="period-morning">
-            <li>
+            <!-- <li>
               <div>
                 <strong class="label-medium">09:00</strong>
                 <span class="pet-name label-small">Thor</span>
@@ -56,7 +56,7 @@
               <span class="remove-schedule paragraph-small"
                 >Remover agendamento</span
               >
-            </li>
+            </li> -->
           </ul>
         </section>
 
@@ -182,8 +182,26 @@
                 id="time"
                 step="3600"
                 pattern="^([01]\d|2[0-3]):00$"
+                list="horas"
                 required
               />
+
+              <datalist id="horas">
+                <option value="09:00">
+                <option value="10:00">
+                <option value="11:00">
+                <option value="12:00">
+                <option value="13:00">
+                <option value="14:00">
+                <option value="15:00">
+                <option value="16:00">
+                <option value="17:00">
+                <option value="18:00">
+                <option value="19:00">
+                <option value="20:00">
+                <option value="21:00">
+              </datalist>
+
             </fieldset>
           </label>
         </div>
